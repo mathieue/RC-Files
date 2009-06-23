@@ -1,0 +1,12 @@
+[submodule "dotfiles/vim/bundle/nerdtree"]
+	path = dotfiles/vim/bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule "dotfiles/vim/bundle/snipmate"]
+	path = dotfiles/vim/bundle/snipmate
+	url = http://github.com/spf13/snipmate.vim.git
+[submodule "dotfiles/vim/bundle/taglist"]
+	path = dotfiles/vim/bundle/taglist
+	url = http://github.com/clones/vim-taglist.git
+[submodule "dotfiles/vim/bundle/command-t"]
+	path = dotfiles/vim/bundle/command-t
+	url = http://github.com/wincent/Command-T.git

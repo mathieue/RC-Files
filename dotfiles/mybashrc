@@ -1,0 +1,43 @@
+##
+## include it this way in your ~/.bashrc 
+##
+
+#if [ -e ~/.mybashrc ]; then
+#        . ~/.mybashrc
+#fi  
+
+export PATH=~/.gem/ruby/1.8/bin:~/bin:$PATH
+export HISTCONTROL=ignoreboth # don't log duplicate and commands starting with
+                              # white space
+export HISTSIZE=10000         # I need history for god sake!
+
+alias ll='ls -l'
+alias grep='grep --color=auto'
+
+alias v='vim'
+
+#affiche calendrier du mois avec jour en cours en nrouge
+#alias cal='var=$(/usr/bin/cal -m); echo "${var/$(date +%-d)/$(echo -e "\033[1;31m$(date +%-d)\033[0m")}"'
+alias tree="find . |grep -v .svn | grep -v .git | sed 's/[^/]*\//|   /g;s/| *\([^| ]\)/+--- \1/'"
+alias e="emacs -nw"
+
+phptags () {
+    ctags-exuberant -h ".php" -R                     \
+        --exclude="\.git"                            \
+        --exclude="*\.js"                            \
+        --exclude="*\.sql"                            \
+	--langmap=php:.php.module.inc \
+        --totals=yes                                 \
+        --tag-relative=yes                           \
+        --PHP-kinds=+cf                              \
+        --regex-PHP='/abstract class ([^ ]*)/\1/c/'  \
+        --regex-PHP='/interface ([^ ]*)/\1/c/'       \
+        --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/'
+}
+
+if [ -f /etc/bash_completion ] ; then
+    source /etc/bash_completion
+    complete -o filenames -F _longopt a2psfill
+    complete -o filenames -F _longopt rechercher
+    complete -F _command loop
+fi

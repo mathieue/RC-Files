@@ -1,0 +1,2 @@
+#!/bin/bash
+find "$@" -type d \( -name .git -o -name .svn \) -prune -o -print

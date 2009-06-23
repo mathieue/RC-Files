@@ -1,0 +1,3 @@
+set completion-ignore-case On
+# parcourir les completions ambigues au lieu d'afficher la list
+"\C-i": menu-complete

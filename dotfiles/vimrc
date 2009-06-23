@@ -1,0 +1,132 @@
+set background=dark
+syntax off
+syntax on
+set ruler
+set nocompatible
+filetype plugin indent on
+set mouse=a
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+"pathogen init
+call pathogen#runtime_append_all_bundles() 
+colorscheme desert
+
+"keep space on vertical window moving
+set so=7
+
+" set foldmethod=syntax
+set foldenable      " fold enable but..
+set foldlevel=100   " dont fold if i dont ask
+
+" jump between pairs element ( => ) if => endif etc..
+runtime! macros/matchit.vim
+
+" indnet
+augroup myfiletypes
+	autocmd!
+	autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+	autocmd FileType c,php,html set ai sw=2 sts=2 et
+	autocmd FileType python set ai sw=4 sts=4 et
+augroup END
+
+augroup markdown
+	autocmd!
+	autocmd BufRead,BufNewFile *.mkd set filetype=mkd 
+	autocmd BufRead,BufNewFile *.mkd set tw=100
+augroup END
+
+filetype on
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+" my leader shortcut
+let mapleader = ","
+
+" spell checking!
+map <leader>C :w<CR>:!aspell -c %<CR>:e %<CR>
+
+" my custom rgrep
+set grepprg=mgrep\ $*\ .\ -n
+
+" rgrep word under cursor
+map <leader>g :grep <cword><CR> :cope <CR>
+
+" faster write buffer
+nmap <leader>w :w!<cr>
+
+" no backup no swap
+set nobackup
+set nowritebackup
+set noswapfile
+
+" esay windo moving
+map  <c-k> :wincmd k<CR>
+map  <c-j> :wincmd j<CR>
+map  <c-h> :wincmd h<CR>
+map  <c-l> :wincmd l<CR>
+
+" gvim 
+set guifont=Monospace\ 8
+
+
+" go to next window: not nerdtree
+au VimEnter *  wincmd l
+
+" nerdtree
+nmap <leader>n :tabnew<CR>:NERDTree<CR><c-w><c-w><c-w><c-c>
+
+" super tab
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = "context"
+
+set wildmenu
+
+" php helping
+let php_sql_query=1
+let php_htmlInStrings=1
+
+" tabs
+:nmap <C-t> :tabnext<CR>
+:nmap <C-n> :tabnew<CR>
+:imap <C-t> <Esc>:tabnext<CR>
+
+" sessions life from vim.org
+
+" Creates a session
+function! MakeSession()
+	let b:sessiondir = $HOME . "/.vim_sessions" . getcwd()
+	if (filewritable(b:sessiondir) != 2)
+		exe 'silent !mkdir -p ' b:sessiondir
+		redraw!
+	endif
+	let b:filename = b:sessiondir . '/session.vim'
+	exe "mksession! " . b:filename
+endfunction
+
+" Updates a session, BUT ONLY IF IT ALREADY EXISTS
+function! UpdateSession()
+	let b:sessiondir = $HOME . "/.vim_sessions" . getcwd()
+	let b:sessionfile = b:sessiondir . "/session.vim"
+	if (filereadable(b:sessionfile))
+		exe "mksession! " . b:sessionfile
+	endif
+endfunction
+
+" Loads a session if it exists
+function! LoadSession()
+	if argc() == 0
+		let b:sessiondir = $HOME . "/.vim_sessions" . getcwd()
+		let b:sessionfile = b:sessiondir . "/session.vim"
+		if (filereadable(b:sessionfile))
+			exe 'source ' b:sessionfile
+		else
+			echo "No session loaded."
+		endif
+	endif
+endfunction
+
+au VimEnter * :call LoadSession()
+au VimLeave * :call UpdateSession()
+map <leader>m :call MakeSession()<CR>

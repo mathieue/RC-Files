@@ -1,0 +1,2 @@
+#!/bin/bash
+mplayer http://www.di.fm/mp3/vocaltrance.pls

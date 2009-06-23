@@ -1,0 +1,3 @@
+#!/bin/sh
+# mathieu elie simple rgrep addon
+rgrep -I --exclude-dir='tmp' --exclude-dir='.svn' --exclude-dir='.git' --exclude='*.gz' --exclude='*.dump' --exclude='*.sql' "$@"

@@ -1,0 +1,21 @@
+RC files, Vim RC, tools
+========================
+
+Install
+------------------------
+
+cd src/vim72/
+./configure --enable-rubyinterp --prefix=/home/user/vim72
+make
+make install
+./src/vim --version | grep ruby
+cd
+cd src/
+git clone host:/home/user/git/rcfiles 
+cd rcfiles/
+git submodule init
+git submodule update
+cd dotfiles/vim/bundle/command-t/
+rake make
+cd -
+make install

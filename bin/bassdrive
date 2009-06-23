@@ -1,0 +1,2 @@
+#!/bin/sh
+mplayer http://www.bassdrive.com/v2/streams/BassDrive.pls
