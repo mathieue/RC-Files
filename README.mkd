@@ -1,21 +1,30 @@
-RC files, Vim RC, tools
+RC files, Vim Plugins and conf and tools
 ========================
+
 
 Install
 ------------------------
 
-cd src/vim72/
-./configure --enable-rubyinterp --prefix=/home/user/vim72
-make
-make install
-./src/vim --version | grep ruby
-cd
-cd src/
-git clone host:/home/user/git/rcfiles 
-cd rcfiles/
-git submodule init
-git submodule update
-cd dotfiles/vim/bundle/command-t/
-rake make
-cd -
-make install
+Compile vim > 72 with ruby support
+
+	cd src/vim72/
+	./configure --enable-rubyinterp --prefix=/home/user/vim72
+	make
+	make install
+	./src/vim --version | grep ruby
+
+Now clone RC Files, init && update submodules
+
+	cd
+	cd src/
+	git clone host:/home/user/git/rcfiles 
+	cd rcfiles/
+	git submodule init
+	git submodule update
+
+Compile command-t vim/ruby/c plugin
+
+	cd dotfiles/vim/bundle/command-t/
+	rake make
+	cd -
+	make install
