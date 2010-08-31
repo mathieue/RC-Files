@@ -17,7 +17,7 @@ Now clone RC Files, init && update submodules
 
 	cd
 	cd src/
-	git clone git clone http://github.com/mathieue/RC-Files.git rcfiles
+ 	git clone http://github.com/mathieue/RC-Files.git rcfiles
 	cd rcfiles/
 	git submodule init
 	git submodule update
