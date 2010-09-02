@@ -77,9 +77,6 @@ au VimEnter *  wincmd l
 " nerdtree
 nmap <leader>n :tabnew<CR>:NERDTree<CR><c-w><c-w><c-w><c-c>
 
-" super tab
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
 
 set wildmenu
 
