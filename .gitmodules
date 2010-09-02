@@ -10,3 +10,6 @@
 [submodule "dotfiles/vim/bundle/command-t"]
 	path = dotfiles/vim/bundle/command-t
 	url = http://github.com/wincent/Command-T.git
+[submodule "dotfiles/vim/bundle/delimitmate"]
+	path = dotfiles/vim/bundle/delimitmate
+	url = http://github.com/Raimondi/delimitMate.git
