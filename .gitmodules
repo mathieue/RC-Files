@@ -13,3 +13,6 @@
 [submodule "dotfiles/vim/bundle/delimitmate"]
 	path = dotfiles/vim/bundle/delimitmate
 	url = http://github.com/Raimondi/delimitMate.git
+[submodule "dotfiles/vim/bundle/supertab"]
+	path = dotfiles/vim/bundle/supertab
+	url = http://github.com/ervandew/supertab.git
