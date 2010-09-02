@@ -29,3 +29,9 @@ Compile command-t vim/ruby/c plugin
 	cd -
 	make install
 
+## Vim Plugins
+### Delimitmate
+
+Automatic closing pair of {, ', etc...
+
+http://github.com/Raimondi/delimitMate
