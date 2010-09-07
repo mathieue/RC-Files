@@ -9,15 +9,15 @@ Prerequisites
 Compile vim > 72 with ruby support
 
 	cd src/
-	curl ftp://ftp.vim.org/pub/vim/unix/vim-7.2.tar.bz2 | tar -xjvf -
+	curl http://ftp.vim.org/pub/vim/unix/vim-7.2.tar.bz2 | tar -xjvf -
 	cd vim72/
 	./configure --enable-rubyinterp --prefix=/home/user/vim72
 	make
-	make install
 	./src/vim --version | grep ruby   # +ruby ?
+	make install
 	cd
 	cd bin/
-	ln -s /home/user/vim73/bin/* .
+	ln -s /home/user/vim72/bin/* .
 
 Now clone RC Files, init && update submodules
 
