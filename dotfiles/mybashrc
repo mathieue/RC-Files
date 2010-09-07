@@ -12,7 +12,7 @@ export CDPATH=.:~
 export PATH=~/.gem/ruby/1.8/bin:~/bin:$PATH
 export HISTCONTROL=ignoreboth # don't log duplicate and commands starting with
                               # white space
-export HISTSIZE=10000         # I need history for god sake!
+export HISTSIZE=100000        # I need history for god sake!
 
 alias ll='ls -l'
 alias grep='grep --color=auto'
