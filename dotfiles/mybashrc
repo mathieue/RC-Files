@@ -21,6 +21,8 @@ alias ll='ls -l'
 alias grep='grep --color=auto'
 
 alias v='vim'
+alias vi='vim'
+alias h='history'
 
 #affiche calendrier du mois avec jour en cours en nrouge
 #alias cal='var=$(/usr/bin/cal -m); echo "${var/$(date +%-d)/$(echo -e "\033[1;31m$(date +%-d)\033[0m")}"'
