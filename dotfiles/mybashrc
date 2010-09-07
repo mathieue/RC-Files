@@ -6,6 +6,9 @@
 #        . ~/.mybashrc
 #fi  
 
+# complete cd with extra dirs
+export CDPATH=.:~
+
 export PATH=~/.gem/ruby/1.8/bin:~/bin:$PATH
 export HISTCONTROL=ignoreboth # don't log duplicate and commands starting with
                               # white space
