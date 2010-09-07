@@ -61,6 +61,11 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" shortcuts for saving with ctrl-s
+nmap <c-s> :w<CR>
+vmap <c-s> <esc><c-s>
+imap <c-s> <esc><c-s>
+
 " esay windo moving
 map  <c-k> :wincmd k<CR>
 map  <c-j> :wincmd j<CR>

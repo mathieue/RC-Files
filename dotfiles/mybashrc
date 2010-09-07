@@ -6,6 +6,9 @@
 #        . ~/.mybashrc
 #fi  
 
+# xoff signal freeze terminal with <ctrl-s> on putty screen 
+stty -ixon
+
 # complete cd with extra dirs
 export CDPATH=.:~
 
