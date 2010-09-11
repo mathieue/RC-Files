@@ -16,3 +16,6 @@
 [submodule "dotfiles/vim/bundle/supertab"]
 	path = dotfiles/vim/bundle/supertab
 	url = http://github.com/ervandew/supertab.git
+[submodule "dotfiles/vim/bundle/gist"]
+	path = dotfiles/vim/bundle/gist
+	url = http://github.com/mattn/gist-vim.git

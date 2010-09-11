@@ -56,6 +56,9 @@ map <leader>g :grep <cword><CR> :cope <CR>
 " faster write buffer
 nmap <leader>w :w!<cr>
 
+" gist
+nmap <leader>l :Gist -l<cr>
+
 " no backup no swap
 set nobackup
 set nowritebackup
