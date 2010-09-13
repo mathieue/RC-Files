@@ -34,3 +34,16 @@ Now clone RC Files, init && update submodules
 Automatic closing pair of {, ', etc...
 
 http://github.com/Raimondi/delimitMate
+
+### Gist
+
+Edit github gist from vim.
+
+	:Gist -l or <leader>l
+	list gists from mine.
+
+
+git config --global user.name "Mathieu ELie"
+git config --global user.email "m@.com"
+git config --global github.user  mathieue
+git config --global github.token xxxxx

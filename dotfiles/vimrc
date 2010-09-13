@@ -56,10 +56,18 @@ map <leader>g :grep <cword><CR> :cope <CR>
 " faster write buffer
 nmap <leader>w :w!<cr>
 
+" gist
+nmap <leader>l :Gist -l<cr>
+
 " no backup no swap
 set nobackup
 set nowritebackup
 set noswapfile
+
+" shortcuts for saving with ctrl-s
+nmap <c-s> :w<CR>
+vmap <c-s> <esc><c-s>
+imap <c-s> <esc><c-s>
 
 " esay windo moving
 map  <c-k> :wincmd k<CR>
