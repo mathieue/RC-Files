@@ -14,5 +14,8 @@ install:
 	@rm -rf ~/.vim/*
 	@cp -r dotfiles/vim/* ~/.vim/
 	@[ -d ~/.vim/tmp ] || mkdir ~/.vim/tmp
+	@[ -d ~/.bash ] || mkdir ~/.bash
+	@rm -rf ~/.bash/*
+	@cp -r dotfiles/bash/* ~/.bash/
 
 .PHONY: all install

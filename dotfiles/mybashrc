@@ -48,4 +48,8 @@ if [ -f /etc/bash_completion ] ; then
     complete -o filenames -F _longopt a2psfill
     complete -o filenames -F _longopt rechercher
     complete -F _command loop
+    for file in $HOME/.bash/completion/*; do
+       source $file
+    done
 fi
+
