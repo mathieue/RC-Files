@@ -1,2 +1,8 @@
 #!/bin/bash
-find "$@" -type d \( -name .git -o -name .svn \) -prune -o -print
+set -e
+
+PARAM="$@"
+if [ $# -eq 0  ]; then
+	PARAM="${PARAM} ."
+fi	
+find $PARAM -type d \( -name .git -o -name .svn \) -prune -o -print
