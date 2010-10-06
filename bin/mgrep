@@ -1,3 +1,10 @@
 #!/bin/sh
 # mathieu elie simple rgrep addon
-rgrep -I --exclude-dir='tmp' --exclude-dir='.svn' --exclude-dir='.git' --exclude='*.gz' --exclude='*.dump' --exclude='*.sql' "$@"
+set -e
+
+PARAM="$@"
+if [ $# -eq 1  ]; then
+	PARAM="${PARAM} ."
+fi	
+	
+rgrep -I --exclude-dir='tmp' --exclude-dir='.svn' --exclude-dir='.git' --exclude='*.gz' --exclude='*.dump' --exclude='*.sql' $PARAM
