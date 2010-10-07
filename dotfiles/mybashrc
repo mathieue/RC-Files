@@ -53,3 +53,4 @@ if [ -f /etc/bash_completion ] ; then
     done
 fi
 
+export PYTHONSTARTUP=~/.pythonrc
