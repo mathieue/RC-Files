@@ -24,6 +24,13 @@ alias v='vim'
 alias vi='vim'
 alias h='history'
 
+alias g='mgrep'
+alias gr='grep'
+alias f='mfind'
+
+alias br='git show-branch  | less'
+alias st='git status'
+
 #affiche calendrier du mois avec jour en cours en nrouge
 #alias cal='var=$(/usr/bin/cal -m); echo "${var/$(date +%-d)/$(echo -e "\033[1;31m$(date +%-d)\033[0m")}"'
 alias tree="find . |grep -v .svn | grep -v .git | sed 's/[^/]*\//|   /g;s/| *\([^| ]\)/+--- \1/'"
