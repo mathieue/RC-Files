@@ -26,7 +26,7 @@ alias h='history'
 
 alias rg='mgrep'
 alias g='grep'
-alias f='mfind'
+alias f='mfinda'
 
 alias br='git show-branch  | less'
 alias st='git status'
@@ -48,6 +48,11 @@ phptags () {
         --regex-PHP='/abstract class ([^ ]*)/\1/c/'  \
         --regex-PHP='/interface ([^ ]*)/\1/c/'       \
         --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/'
+}
+
+
+reload () {
+   source ~/.bashrc
 }
 
 if [ -f /etc/bash_completion ] ; then
