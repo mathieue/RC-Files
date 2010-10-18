@@ -18,6 +18,9 @@ export HISTCONTROL=ignoreboth # don't log duplicate and commands starting with
 export HISTSIZE=100000        # I need history for god sake!
 
 alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias grep='grep --color=auto'
 
 alias v='vim'
