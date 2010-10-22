@@ -22,3 +22,6 @@
 [submodule "dotfiles/vim/bundle/minibufexplorer"]
 	path = dotfiles/vim/bundle/minibufexplorer
 	url = http://github.com/vim-scripts/minibufexplorerpp.git
+[submodule "dotfiles/vim/bundle/bufonly"]
+	path = dotfiles/vim/bundle/bufonly
+	url = http://github.com/duff/vim-bufonly.git

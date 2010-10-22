@@ -150,3 +150,7 @@ autocmd BufRead,BufNew :call UMiniBufExplorer
 
 map <leader>u :TMiniBufExplorer<cr>
 
+" Bufonly
+map <leader>b :BufOnly<cr>
+
+
