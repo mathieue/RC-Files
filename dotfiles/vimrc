@@ -93,8 +93,8 @@ let php_sql_query=1
 let php_htmlInStrings=1
 
 " tabs
-:nmap <C-t> :bnext<CR>
-:nmap <C-n> :tabnew<CR>
+:nmap <C-t> :tabnext<CR>
+:nmap <C-n> :bnext<CR>
 :imap <C-t> <Esc>:tabnext<CR>
 
 " sessions life from vim.org
