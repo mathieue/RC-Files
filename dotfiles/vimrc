@@ -93,7 +93,7 @@ let php_sql_query=1
 let php_htmlInStrings=1
 
 " tabs
-:nmap <C-t> :tabnext<CR>
+:nmap <C-t> :bnext<CR>
 :nmap <C-n> :tabnew<CR>
 :imap <C-t> <Esc>:tabnext<CR>
 
@@ -139,13 +139,10 @@ map <leader>m :call MakeSession()<CR>
 """""""""""""""""""""""""""""
 " => Minibuffer plugin
 " """""""""""""""""""""""""""""
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 2
-let g:miniBufExplModSelTarget = 0
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplVSplit = 25
-let g:miniBufExplSplitBelow=1
 
 let g:bufExplorerSortBy = "name"
 
