@@ -18,11 +18,21 @@ export HISTCONTROL=ignoreboth # don't log duplicate and commands starting with
 export HISTSIZE=100000        # I need history for god sake!
 
 alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias grep='grep --color=auto'
 
 alias v='vim'
 alias vi='vim'
 alias h='history'
+
+alias rg='mgrep'
+alias g='grep'
+alias f='mfinda'
+
+alias br='git show-branch  | less'
+alias st='git status'
 
 #affiche calendrier du mois avec jour en cours en nrouge
 #alias cal='var=$(/usr/bin/cal -m); echo "${var/$(date +%-d)/$(echo -e "\033[1;31m$(date +%-d)\033[0m")}"'
@@ -43,6 +53,11 @@ phptags () {
         --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/'
 }
 
+
+reload () {
+   source ~/.bashrc
+}
+
 if [ -f /etc/bash_completion ] ; then
     source /etc/bash_completion
     complete -o filenames -F _longopt a2psfill
@@ -53,3 +68,4 @@ if [ -f /etc/bash_completion ] ; then
     done
 fi
 
+export PYTHONSTARTUP=~/.pythonrc

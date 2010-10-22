@@ -93,7 +93,7 @@ let php_sql_query=1
 let php_htmlInStrings=1
 
 " tabs
-:nmap <C-t> :tabnext<CR>
+:nmap <C-t> :bnext<CR>
 :nmap <C-n> :tabnew<CR>
 :imap <C-t> <Esc>:tabnext<CR>
 
@@ -135,4 +135,27 @@ endfunction
 au VimEnter * :call LoadSession()
 au VimLeave * :call UpdateSession()
 map <leader>m :call MakeSession()<CR>
+
+"""""""""""""""""""""""""""""
+" => Minibuffer plugin
+" """""""""""""""""""""""""""""
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1
+
+let g:bufExplorerSortBy = "name"
+
+autocmd BufRead,BufNew :call UMiniBufExplorer
+
+map <leader>u :TMiniBufExplorer<cr>
+
+" Bufonly
+map <leader>b :BufOnly<cr>
+"
+"""""""""""""""""""""""""""""
+" => MRU plugin
+" """""""""""""""""""""""""""""
+let MRU_Max_Entries = 400
+map <leader>f :MRU<CR>"
 

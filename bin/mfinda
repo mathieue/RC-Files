@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+command="mfind"
+for arg in "$@"; do
+	command="${command} | grep \"${arg}\"";
+done;
+eval $command
