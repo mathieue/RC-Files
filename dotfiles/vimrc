@@ -152,5 +152,10 @@ map <leader>u :TMiniBufExplorer<cr>
 
 " Bufonly
 map <leader>b :BufOnly<cr>
-
+"
+"""""""""""""""""""""""""""""
+" => MRU plugin
+" """""""""""""""""""""""""""""
+let MRU_Max_Entries = 400
+map <leader>f :MRU<CR>"
 
