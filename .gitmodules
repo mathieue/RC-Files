@@ -16,6 +16,9 @@
 [submodule "dotfiles/vim/bundle/supertab"]
 	path = dotfiles/vim/bundle/supertab
 	url = http://github.com/ervandew/supertab.git
+[submodule "vim-debug"]
+	path = vim-debug
+	url = http://github.com/jabapyth/vim-debug.git
 [submodule "dotfiles/vim/bundle/gist"]
 	path = dotfiles/vim/bundle/gist
-	url = http://github.com/mattn/gist-vim.git
+	url = git@github.com:mathieue/gist-vim.git
