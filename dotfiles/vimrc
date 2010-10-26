@@ -1,9 +1,7 @@
 set background=dark
 syntax off
-syntax on
 set ruler
 set nocompatible
-filetype plugin indent on
 set mouse=a
 set incsearch
 set hlsearch
@@ -12,8 +10,11 @@ set smartcase
 
 "pathogen init
 call pathogen#runtime_append_all_bundles() 
-colorscheme desert
+filetype off
+syntax on
+filetype plugin indent on
 
+colorscheme desert
 "keep space on vertical window moving
 set so=7
 
