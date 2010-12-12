@@ -31,3 +31,6 @@
 [submodule "dotfiles/vim/bundle/mru"]
 	path = dotfiles/vim/bundle/mru
 	url = http://github.com/ornicar/vim-mru.git
+[submodule "melie-tools"]
+	path = melie-tools
+	url = http://github.com/mathieue/melie-tools.git

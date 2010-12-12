@@ -9,6 +9,7 @@ all:
 install:
 	@mkdir -p ~/bin
 	@cp bin/* ~/bin
+	@cp melie-tools/melie-* ~/bin
 	@for i in $(DOTFILES); do cp dotfiles/$$i ~/.$$i; done
 	@[ -d ~/.vim ] || mkdir ~/.vim
 	@rm -rf ~/.vim/*

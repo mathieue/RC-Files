@@ -27,9 +27,9 @@ alias v='vim'
 alias vi='vim'
 alias h='history'
 
-alias rg='mgrep'
-alias g='grep'
-alias f='mfinda'
+alias rg='melie-rgrep'
+alias g='melie-grep'
+alias f='melie-find'
 
 alias br='git show-branch  | less'
 alias st='git status'
