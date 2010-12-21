@@ -7,4 +7,4 @@ if [ $# -eq 1  ]; then
 	PARAM="${PARAM} ."
 fi	
 	
-rgrep -I --exclude-dir='tmp' --exclude-dir='.svn' --exclude-dir='.git' --exclude='*.gz' --exclude='*.dump' --exclude='*.sql' $PARAM
+rgrep -I --exclude-dir='tmp' --exclude-dir='.svn' --exclude-dir='.git' --exclude='*.gz' --exclude='*.dump' --exclude='*.pyc' --exclude='*.sql' $PARAM
