@@ -22,6 +22,9 @@ set so=7
 set foldenable      " fold enable but..
 set foldlevel=100   " dont fold if i dont ask
 
+" no match highlight
+let loaded_matchparen = 1
+
 " jump between pairs element ( => ) if => endif etc..
 runtime! macros/matchit.vim
 
