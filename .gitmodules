@@ -9,7 +9,7 @@
 	url = http://github.com/clones/vim-taglist.git
 [submodule "dotfiles/vim/bundle/command-t"]
 	path = dotfiles/vim/bundle/command-t
-	url = http://github.com/wincent/Command-T.git
+	url = git://git.wincent.com/command-t.git
 [submodule "dotfiles/vim/bundle/delimitmate"]
 	path = dotfiles/vim/bundle/delimitmate
 	url = http://github.com/Raimondi/delimitMate.git
