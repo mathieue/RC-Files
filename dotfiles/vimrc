@@ -33,7 +33,7 @@ augroup myfiletypes
 	autocmd!
 	autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 	autocmd FileType c,php,html,htmldjango set ai sw=2 sts=2 et
-	autocmd FileType python set ai sw=4 sts=4 et
+	autocmd FileType python,javascript set ai sw=4 sts=4 et
 augroup END
 
 augroup markdown
