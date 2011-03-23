@@ -37,3 +37,6 @@
 [submodule "dotfiles/vim/bundle/vim-easytags"]
 	path = dotfiles/vim/bundle/vim-easytags
 	url = https://github.com/spf13/vim-easytags.git
+[submodule "dotfiles/vim/bundle/vim-showmarks"]
+	path = dotfiles/vim/bundle/vim-showmarks
+	url = https://github.com/garbas/vim-showmarks.git
