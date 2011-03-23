@@ -34,3 +34,6 @@
 [submodule "melie-tools"]
 	path = melie-tools
 	url = http://github.com/mathieue/melie-tools.git
+[submodule "dotfiles/vim/bundle/vim-easytags"]
+	path = dotfiles/vim/bundle/vim-easytags
+	url = https://github.com/spf13/vim-easytags.git
