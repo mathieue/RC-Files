@@ -63,6 +63,9 @@ set grepprg=mgrep\ $*\ .\ -n
 " rgrep word under cursor
 map <leader>g :grep <cword><CR> :cope <CR>
 
+" ctrl + right click rgrep for word under cursor
+map <c-RightMouse> :grep <cword><CR> :cope <CR> <CR>
+
 " faster write buffer
 nmap <leader>w :w!<cr>
 
