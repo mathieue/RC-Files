@@ -72,6 +72,10 @@ nmap <leader>w :w!<cr>
 " gist
 nmap <leader>l :Gist -l<cr>
 
+" update ctags with easy tags recursive
+nmap <leader>r :UpdateTags -R .<cr>
+
+
 " no backup no swap
 set nobackup
 set nowritebackup
