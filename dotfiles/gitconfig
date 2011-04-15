@@ -1,0 +1,24 @@
+[user]
+	name = Mathieu Elie
+	email = mathieuelie@gmail.com
+[core]
+	editor = vim
+
+[alias] 
+	st = status
+	ci = commit
+	co = checkout
+	w = whatchanged
+	br = branch
+	df = diff
+	graph = log --graph --oneline --decorate
+	sb = show-branch
+	dfs = diff --staged
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreenen(%cr)%Creset' --abbrev-commit --date=relative --branches --remotes
+
+[color] 
+	diff = auto
+	interactive = auto
+	status = auto
+	branch = auto
