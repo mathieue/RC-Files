@@ -18,5 +18,6 @@ install:
 	@[ -d ~/.bash ] || mkdir ~/.bash
 	@rm -rf ~/.bash/*
 	@cp -r dotfiles/bash/* ~/.bash/
+	./bin/installrc.sh
 
 .PHONY: all install
