@@ -1,5 +1,5 @@
 # small Makefile to install dotfile in ~ and custom scripts in ~/bin
-DOTFILES=mybashrc vimrc inputrc pythonrc gitconfig
+DOTFILES=mybashrc vimrc inputrc pythonrc gitconfig screenrc
 
 all:
 	git submodule init
