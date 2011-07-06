@@ -46,7 +46,15 @@ alias br='git show-branch  | less'
 alias st='git status'
 
 alias sl='screen -list'
+
 alias s='screen -Rd'
+
+_melie-screen()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W '$(screen -list | cut -f 2 | cut -d "." -f 2 | grep -v "There" | head -n-2 )' -- $cur) )
+}
+complete -F _melie-screen s
 
 #affiche calendrier du mois avec jour en cours en nrouge
 #alias cal='var=$(/usr/bin/cal -m); echo "${var/$(date +%-d)/$(echo -e "\033[1;31m$(date +%-d)\033[0m")}"'
