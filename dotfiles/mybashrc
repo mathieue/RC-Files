@@ -47,7 +47,7 @@ alias st='git status'
 
 alias sl='screen -list'
 
-alias s='screen -Rd'
+alias s='screen -RRd'
 
 _melie-screen()
 {
