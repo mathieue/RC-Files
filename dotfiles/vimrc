@@ -12,9 +12,6 @@ set hlsearch
 set ignorecase
 set smartcase
 set history=1000
-set cursorline
-hi cursorline guibg=#333333
-hi CursorColumn guibg=#333333
 set scrolljump=5 " lines to scroll when cursor leaves screen"
 
 "pathogen init
