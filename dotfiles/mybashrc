@@ -45,7 +45,7 @@ alias f='melie-find'
 alias br='git show-branch  | less'
 alias st='git status'
 
-alias sl='screen -list'
+alias sl='screen -list | sort -t "." -k2'
 
 alias s='screen -RRd'
 
