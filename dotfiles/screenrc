@@ -1,3 +1,6 @@
+bindkey ^[b prev
+bindkey ^[f next
+
 hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %l ]%{g}[%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%C%a %{g}]'
 activity "Activity in %t(%n)"
