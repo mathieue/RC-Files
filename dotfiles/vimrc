@@ -46,6 +46,10 @@ augroup markdown
 	autocmd BufRead,BufNewFile *.mkd set tw=100
 augroup END
 
+augroup filetypedetect
+	autocmd BufNewFile,BufRead *.php set filetype=php
+augroup END
+
 filetype on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
