@@ -21,7 +21,7 @@
 	url = http://github.com/jabapyth/vim-debug.git
 [submodule "dotfiles/vim/bundle/gist"]
 	path = dotfiles/vim/bundle/gist
-	url = git@github.com:mathieue/gist-vim.git
+	url = http://github.com/mathieue/gist-vim.git
 [submodule "dotfiles/vim/bundle/minibufexplorer"]
 	path = dotfiles/vim/bundle/minibufexplorer
 	url = http://github.com/vim-scripts/minibufexplorerpp.git
