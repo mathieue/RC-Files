@@ -20,13 +20,14 @@ filetype off
 syntax on
 filetype plugin indent on
 
-colorscheme desert
+colorscheme my-desert
 "keep space on vertical window moving
 set so=7
 
 " set foldmethod=syntax
 set foldenable      " fold enable but..
-set foldlevel=100   " dont fold if i dont ask
+set foldmethod=syntax
+set foldlevelstart=1 
 
 " jump between pairs element ( => ) if => endif etc..
 runtime! macros/matchit.vim
