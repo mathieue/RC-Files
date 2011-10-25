@@ -77,6 +77,8 @@ nmap <leader>l :Gist -l<cr>
 " update ctags with easy tags recursive
 nmap <leader>r :UpdateTags -R .<cr>
 
+" reload vimrc
+map <leader>c :source ~/.vimrc <cr>
 
 " no backup no swap
 set nobackup
