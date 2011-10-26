@@ -1,6 +1,7 @@
 # small Makefile to install dotfile in ~ and custom scripts in ~/bin
 all:
 	git submodule init
+	git submodule sync
 	git submodule update
 	cd dotfiles/.vim/bundle/command-t/ && rake make
 	
