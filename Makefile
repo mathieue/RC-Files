@@ -13,7 +13,7 @@ install:
 	rm -rf ~/.vim/*
 	[ -d ~/.bash ] || mkdir ~/.bash
 	rm -rf ~/.bash/*
-	cd dotfiles && cp -av . ~/
+	cd dotfiles && cp -a . ~/
 	[ -d ~/.vim/tmp ] || mkdir ~/.vim/tmp
 	./bin/installrc.sh
 
