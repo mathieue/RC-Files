@@ -2,7 +2,7 @@
 all:
 	git submodule init
 	git submodule update
-	cd dotfiles/vim/bundle/command-t/ && rake make
+	cd dotfiles/.vim/bundle/command-t/ && rake make
 	
 install:
 	mkdir -p ~/bin

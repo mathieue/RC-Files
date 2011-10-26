@@ -1,42 +1,42 @@
-[submodule "dotfiles/vim/bundle/nerdtree"]
-	path = dotfiles/vim/bundle/nerdtree
+[submodule "dotfiles/.vim/bundle/nerdtree"]
+	path = dotfiles/.vim/bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
-[submodule "dotfiles/vim/bundle/snipmate"]
-	path = dotfiles/vim/bundle/snipmate
+[submodule "dotfiles/.vim/bundle/snipmate"]
+	path = dotfiles/.vim/bundle/snipmate
 	url = http://github.com/spf13/snipmate.vim.git
-[submodule "dotfiles/vim/bundle/taglist"]
-	path = dotfiles/vim/bundle/taglist
-	url = http://github.com/clones/vim-taglist.git
-[submodule "dotfiles/vim/bundle/command-t"]
-	path = dotfiles/vim/bundle/command-t
+[submodule "dotfiles/.vim/bundle/taglist"]
+	path = dotfiles/.vim/bundle/taglist
+	url = http://github.com/clones/.vim-taglist.git
+[submodule "dotfiles/.vim/bundle/command-t"]
+	path = dotfiles/.vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "dotfiles/vim/bundle/delimitmate"]
-	path = dotfiles/vim/bundle/delimitmate
+[submodule "dotfiles/.vim/bundle/delimitmate"]
+	path = dotfiles/.vim/bundle/delimitmate
 	url = http://github.com/Raimondi/delimitMate.git
-[submodule "dotfiles/vim/bundle/supertab"]
-	path = dotfiles/vim/bundle/supertab
+[submodule "dotfiles/.vim/bundle/supertab"]
+	path = dotfiles/.vim/bundle/supertab
 	url = http://github.com/ervandew/supertab.git
 [submodule "vim-debug"]
 	path = vim-debug
-	url = http://github.com/jabapyth/vim-debug.git
-[submodule "dotfiles/vim/bundle/gist"]
-	path = dotfiles/vim/bundle/gist
+	url = http://github.com/jabapyth/.vim-debug.git
+[submodule "dotfiles/.vim/bundle/gist"]
+	path = dotfiles/.vim/bundle/gist
 	url = http://github.com/mathieue/gist-vim.git
-[submodule "dotfiles/vim/bundle/minibufexplorer"]
-	path = dotfiles/vim/bundle/minibufexplorer
-	url = http://github.com/vim-scripts/minibufexplorerpp.git
-[submodule "dotfiles/vim/bundle/bufonly"]
-	path = dotfiles/vim/bundle/bufonly
-	url = http://github.com/duff/vim-bufonly.git
-[submodule "dotfiles/vim/bundle/mru"]
-	path = dotfiles/vim/bundle/mru
-	url = http://github.com/ornicar/vim-mru.git
+[submodule "dotfiles/.vim/bundle/minibufexplorer"]
+	path = dotfiles/.vim/bundle/minibufexplorer
+	url = http://github.com/.vim-scripts/minibufexplorerpp.git
+[submodule "dotfiles/.vim/bundle/bufonly"]
+	path = dotfiles/.vim/bundle/bufonly
+	url = http://github.com/duff/.vim-bufonly.git
+[submodule "dotfiles/.vim/bundle/mru"]
+	path = dotfiles/.vim/bundle/mru
+	url = http://github.com/ornicar/.vim-mru.git
 [submodule "melie-tools"]
 	path = melie-tools
 	url = http://github.com/mathieue/melie-tools.git
-[submodule "dotfiles/vim/bundle/vim-easytags"]
-	path = dotfiles/vim/bundle/vim-easytags
+[submodule "dotfiles/.vim/bundle/vim-easytags"]
+	path = dotfiles/.vim/bundle/vim-easytags
 	url = https://github.com/spf13/vim-easytags.git
-[submodule "dotfiles/vim/bundle/vim-showmarks"]
-	path = dotfiles/vim/bundle/vim-showmarks
+[submodule "dotfiles/.vim/bundle/vim-showmarks"]
+	path = dotfiles/.vim/bundle/vim-showmarks
 	url = https://github.com/garbas/vim-showmarks.git
