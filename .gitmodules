@@ -27,7 +27,7 @@
 	url = http://github.com/vim-scripts/minibufexplorerpp.git
 [submodule "dotfiles/.vim/bundle/bufonly"]
 	path = dotfiles/.vim/bundle/bufonly
-	url = http://github.com/duff/vim-bufonly
+	url = http://github.com/duff/vim-bufonly.git
 [submodule "dotfiles/.vim/bundle/mru"]
 	path = dotfiles/.vim/bundle/mru
 	url = http://github.com/ornicar/vim-mru.git
