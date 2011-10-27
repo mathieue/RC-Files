@@ -116,8 +116,8 @@ let php_htmlInStrings=1
 " tabs
 :nmap <C-t> :tabnext<CR>
 :nmap <C-n> :bnext<CR>
-map <Esc>[D :bnext<CR>
-map <Esc>[C gt :bprevious<CR>
+map <Esc>[C :bnext<CR>
+map <Esc>[D :bprevious<CR>
 :imap <C-t> <Esc>:tabnext<CR>
 
 " sessions life from vim.org
