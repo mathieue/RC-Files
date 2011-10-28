@@ -58,6 +58,17 @@ _melie-screen()
 }
 complete -F _melie-screen s
 
+alias t='tmux at -t'
+alias tt='tmux ls'
+
+_melie-tmux()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W '$(tmux ls | cut -f 1 -d ':')' -- $cur) )
+}
+
+complete -F _melie-tmux t
+
 melie-invader() {
     cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh;chmod 700 ~/.ssh;touch ~/.ssh/authorized_keys; cat - >> ~/.ssh/authorized_keys"
 }
