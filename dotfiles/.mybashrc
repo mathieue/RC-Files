@@ -58,8 +58,14 @@ _melie-screen()
 }
 complete -F _melie-screen s
 
-alias t='tmux at -t'
 alias tt='tmux ls'
+
+_t() 
+{
+  tmux at -t $1 || tmux new -s $1
+}
+
+alias t='_t'
 
 _melie-tmux()
 {
