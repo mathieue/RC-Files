@@ -1,0 +1,31 @@
+#!/bin/bash
+set -e
+
+last_arg="${!#}"
+
+PARAM="\"$1\" ."
+command="rgrep -I --exclude-dir='tmp' --exclude-dir='.svn' --exclude-dir='.git' --exclude='*.gz' --exclude='*.dump'  --exclude='*.min.js' --exclude='*.pack.js' --exclude='*.sql' ${PARAM}"
+shift
+for arg in "$@"; do
+	if [ $arg = '-e' ];
+	then
+		continue 
+	fi
+	if [ $arg = '-l' ];
+	then
+		continue 
+	fi
+	command="${command} | grep \"${arg}\"";
+done;
+
+if  [ $last_arg = '-e' ];
+then
+	command="vim \$(${command} | awk -F\":\" '{print \$1}')"
+fi
+
+if  [ $last_arg = '-l' ];
+then
+	command="${command} | cut -f1 -d: | sort -u"
+fi
+
+eval $command

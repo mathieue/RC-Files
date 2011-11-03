@@ -8,7 +8,6 @@ all:
 install:
 	mkdir -p ~/bin
 	cp bin/* ~/bin
-	cp melie-tools/melie-* ~/bin
 	[ -d ~/.vim ] || mkdir ~/.vim
 	rm -rf ~/.vim/*
 	[ -d ~/.bash ] || mkdir ~/.bash
