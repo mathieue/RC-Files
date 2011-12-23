@@ -222,3 +222,7 @@ highlight ShowMarksHLu gui=bold guibg=LightRed guifg=DarkRed
 highlight ShowMarksHLo gui=bold guibg=LightYellow guifg=DarkYellow
 " For multiple marks on the same line.
 highlight ShowMarksHLm gui=bold guibg=LightGreen guifg=DarkGreen
+
+" insert date
+:nnoremap <leader>d  "=strftime("%c")<CR>P"
+:inoremap <leader>d <C-R>=strftime("%c")<CR>
