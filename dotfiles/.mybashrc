@@ -75,6 +75,8 @@ _melie-tmux()
 
 complete -F _melie-tmux t
 
+alias tg='tt | grep'
+
 melie-invader() {
     cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh;chmod 700 ~/.ssh;touch ~/.ssh/authorized_keys; cat - >> ~/.ssh/authorized_keys"
 }
