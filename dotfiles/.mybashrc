@@ -81,6 +81,8 @@ melie-invader() {
     cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh;chmod 700 ~/.ssh;touch ~/.ssh/authorized_keys; cat - >> ~/.ssh/authorized_keys"
 }
 
+alias i='melie-invader'
+
 melie-cheats-install () {
     mkdir -p ~/src && git clone git@git.matte.li:melie-cheats.git ~/src/melie-cheats
 }
