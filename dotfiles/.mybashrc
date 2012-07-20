@@ -13,6 +13,7 @@ stty -ixon
 export CDPATH=.:~
 
 export PATH=~/.gem/ruby/1.8/bin:~/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
 
 export GEM_PATH=~/.gem/override/:~/.gem/ruby/1.8:/usr/lib/ruby/gems/1.8
 export HISTSIZE=100000        # I need history for god sake!
