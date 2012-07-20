@@ -14,6 +14,5 @@ install:
 	rm -rf ~/.bash/*
 	cd dotfiles && tar cf - . | (cd ~; tar xfp -)
 	[ -d ~/.vim/tmp ] || mkdir ~/.vim/tmp
-	./bin/installrc.sh
 
 .PHONY: all install
