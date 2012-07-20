@@ -4,7 +4,7 @@ set -e
 last_arg="${!#}"
 
 PARAM="\"$1\" ."
-command="rgrep -I --exclude-dir='tmp' --exclude-dir='.svn' --exclude-dir='.git' --exclude='*.gz' --exclude='*.dump'  --exclude='*.min.js' --exclude='*.pack.js' --exclude='*.sql' ${PARAM}"
+command="grep -r -I --exclude='tmp' --exclude='.svn' --exclude='.git' --exclude='*.gz' --exclude='*.dump'  --exclude='*.min.js' --exclude='*.pack.js' --exclude='*.sql' ${PARAM}"
 shift
 for arg in "$@"; do
 	if [ $arg = '-e' ];
