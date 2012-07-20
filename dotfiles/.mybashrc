@@ -49,6 +49,7 @@ alias f='melie-find'
 alias br='git show-branch  | less'
 alias st='git status'
 alias co='git commit'
+alias dif='git diff'
 
 alias sl='screen -list | sort -t "." -k2'
 
