@@ -40,3 +40,6 @@
 [submodule "dotfiles/.vim/bundle/vim-showmarks"]
 	path = dotfiles/.vim/bundle/vim-showmarks
 	url = https://github.com/zakj/vim-showmarks.git
+[submodule "dotfiles/.vim/bundle/vim-coffee-script"]
+	path = dotfiles/.vim/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
