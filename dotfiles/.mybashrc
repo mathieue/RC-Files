@@ -55,6 +55,15 @@ alias sl='screen -list | sort -t "." -k2'
 
 alias s='screen -RRd'
 
+
+melie-hub()
+{
+  repo=$1
+  cd ~/src && git clone $1
+}
+
+alias hub='melie-hub'
+
 _melie-screen()
 {
     local cur=${COMP_WORDS[COMP_CWORD]}
