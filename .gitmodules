@@ -43,3 +43,6 @@
 [submodule "dotfiles/.vim/bundle/vim-coffee-script"]
 	path = dotfiles/.vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "dotfiles/.vim/bundle/vim-arduino"]
+	path = dotfiles/.vim/bundle/vim-arduino
+	url = https://github.com/tclem/vim-arduino.git
