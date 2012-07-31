@@ -51,6 +51,7 @@ augroup filetypedetect
 augroup END
 
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+autocmd! BufNewFile,BufRead *.pde setlocal ft=c
 
 filetype on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
